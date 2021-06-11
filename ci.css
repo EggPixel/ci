@@ -4,11 +4,11 @@
 }
 @font-face {
 	font-family: ResourceHanRoundedSC;
-	src: url('ResourceHanRoundedSC-Bold.ttf');
+	src: url('https://gitee.com/EggPixel/ci/raw/master/ResourceHanRoundedSC-Bold.ttf');
 }
 @font-face {
 	font-family: ResourceHanRoundedSC;
-	src: url('ResourceHanRoundedSC-Heavy.ttf');
+	src: url('https://gitee.com/EggPixel/ci/raw/master/ResourceHanRoundedSC-Heavy.ttf');
 	font-weight:bold;
 }
 .head {
