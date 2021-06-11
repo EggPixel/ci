@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MoreBuckets Files</title>
+		<style>
+			/* Tooltip 容器 */
+			.tooltip {
+				position: relative;
+				display: inline-block;
+			}
+			 
+			/* Tooltip 文本 */
+			.tooltip .tooltiptext {
+				visibility: hidden;
+				width: 120px;
+				background-color: black;
+				color: #fff;
+				text-align: center;
+				padding: 5px 0;
+				border-radius: 6px;
+			 
+				/* 定位 */
+				position: absolute;
+				z-index: 1;
+			}
+			.tooltiptext {
+				font-size: 16px;
+			}
+			/* 鼠标移动上去后显示提示框 */
+			.tooltip:hover .tooltiptext {
+				visibility: visible;
+			}
+		</style>
+		<link rel="shortcut icon" href="icon.ico" />
+		<link type="text/css" href="ci.css" rel="stylesheet" />
+		<script src="ci.js"></script>
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+	</head>
+	<body style="font-size: 25px;">
+		<div id="changelog">
+			<span style="font-weight: bold;font-size: 40px;">更新日志:</span> <br/>
+			<span class="tooltip">1.增加了木桶<span class="tooltiptext">木桶: 装水用</span></span> <br/>
+		</div>
+		<span></span> <br/> <!--分割线-->
+		<div id="features">
+			<span style="font-weight: bold;font-size: 40px;">特性:</span> <br/>
+			<span>1.木桶装岩浆将会报废，而且你将会燃烧</span> <br/>
+		</div>
+		<span></span> <br/> <!--分割线-->
+		<div id="bugfix">
+			<span style="font-weight: bold;font-size: 40px;">Bug修复:</span> <br/>
+			<span>无</span> <br/>
+			<a href="javascript:void;" onclick="javascript:feedback();">点我反馈Bug</a>
+		</div>
+		<span></span> <br/> <!--分割线-->
+		<div id="download">
+			<span style="font-weight: bold;font-size: 40px;">下载链接:</span> <br/>
+			<iframe frameborder=0 allowtransparency=1 src="button.html?link=a1.0.jar" width=170px height=50px/>
+		</div>
+	</body>
+</html>

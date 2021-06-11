@@ -1,0 +1,47 @@
+@font-face {
+	font-family: Title;
+	src: url('Font.ttf');
+}
+@font-face {
+	font-family: ResourceHanRoundedSC;
+	src: url('ResourceHanRoundedSC-Bold.ttf');
+}
+@font-face {
+	font-family: ResourceHanRoundedSC;
+	src: url('ResourceHanRoundedSC-Heavy.ttf');
+	font-weight:bold;
+}
+.head {
+	height: 50px;
+	background-color: black;
+	color: white;
+	font-size: 30px;
+	font-family: Title;
+}
+.menu {
+	width: 300px;
+	height: 600px;
+	background-color: rgb(202,235,216);
+	color: black;
+	font-size: 25px;
+	font-family: 'ResourceHanRoundedSC';
+	
+}
+a{
+	color: black;
+	text-decoration:none;
+}
+a:hover{
+	color: rgb(80,80,80);
+	text-decoration:none;
+}
+a:visited{
+	text-decoration:none;
+}
+a:active {
+	color: rgb(110,110,110);
+    text-decoration: none;
+}
+body,html {
+	font-family: 'ResourceHanRoundedSC';
+}
