@@ -19,6 +19,44 @@
 			<span><a href="javascript:void;" onclick="javascript:sw1('jdkd.html');">资源下载</a></span><br />
 			
 		</div>
+		<script type="text/javascript">
+			<!--
+			function Request(strName){
+				var strHref = location.href;
+				var intPos = strHref.indexOf("?");
+				var strRight = strHref.substr(intPos + 1);
+				var arrTmp = strRight.split("&");
+				for(var i = 0; i < arrTmp.length; i++) {
+					var arrTemp = arrTmp[i].split("=");
+					if(arrTemp[0].toUpperCase() == strName.toUpperCase()) return arrTemp[1];
+				}
+					return "";
+			}
+			function Main(){
+				var linked=Request("opened");
+				if(linked=="resources")
+					sw1('jdkd.html');
+			}
+			function sw1(src)
+			{
+				var body = document.getElementsByTagName('body')[0];
+				if (document.getElementById('sw') != null)
+					document.getElementById('sw').remove();
+
+				var a = document.createElement("iframe");
+				a.setAttribute("id","sw");
+				a.setAttribute("frameborder","0");
+				a.setAttribute("allowtransparency","1");
+				a.setAttribute("src",src);
+				a.setAttribute("width","83%");
+				a.setAttribute("height","90%");
+				a.setAttribute("style","position: absolute;left:305px;top:55px;");
+
+				body.appendChild(a);
+			}
+			Main();
+			//-->
+		</script>
 		<iframe id="sw" frameborder=0 allowtransparency=1 src="a1.0.html" width=83% height=90% style="position: absolute;left:305px;top:55px;"/>
 	</body>
 </html>
