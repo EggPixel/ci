@@ -20,7 +20,6 @@
 			
 		</div>
 		
-		<iframe id="sw" frameborder=0 allowtransparency=1 src="a1.0.html" width=83% height=90% style="position: absolute;left:305px;top:55px;"/>
 		<script type="text/javascript">
 			<!--
 			function Request(strName){
@@ -37,7 +36,9 @@
 			function Main(){
 				var linked=Request("opened");
 				if(linked=="resources")
-					setTimeout("sw1('jdkd.html')",3000 );
+					sw1('jdkd.html');
+				else
+					sw1('a1.2.html');
 			}
 			function sw1(src)
 			{
